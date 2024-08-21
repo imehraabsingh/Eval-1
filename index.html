@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maid Booking System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Online Maid Booking System</h1>
+    </header>
+
+    <section id="service-selection">
+        <h2>Select a Service</h2>
+        <div class="service-card">
+            <h3>House Cleaning</h3>
+            <p>Professional house cleaning services.</p>
+            <button class="select-service">Select Service</button>
+        </div>
+        <!-- Add more service cards here -->
+    </section>
+
+    <section id="bargaining">
+        <h2>Make an Offer</h2>
+        <label for="price-offer">Your Offer:</label>
+        <input type="number" id="price-offer" placeholder="Enter your price offer">
+        <button id="submit-offer">Submit Offer</button>
+        <p id="offer-status"></p>
+    </section>
+
+    <section id="reviews">
+        <h2>Reviews</h2>
+        <div id="reviews-container">
+            <!-- Reviews will be loaded here dynamically -->
+        </div>
+        <div id="leave-review">
+            <h3>Leave a Review</h3>
+            <textarea id="review-text" placeholder="Write your review here"></textarea>
+            <button id="submit-review">Submit Review</button>
+        </div>
+    </section>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
