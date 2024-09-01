@@ -1,5 +1,6 @@
-# MaidEase
+<img src="MaidEase(Logo).jpg" alt="Photography Blog Preview" width="100">
 
+# MaidEase
 ## Overview
 MaidEase is an online platform designed to connect users with domestic helpers. Inspired by UrbanClap, it allows users to easily find and book maids for various services. The platform also empowers users with bargaining power, similar to InDriver, and includes a reviews section for both helpers and users to maintain transparency and trust.
 
