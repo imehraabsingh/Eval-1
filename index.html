@@ -3,44 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Maid Booking System</title>
+    <title>MaidEase - Online Maid Hiring</title>
     <link rel="stylesheet" href="styles.css">
+    <!-- Font Awesome for icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 </head>
 <body>
+    <!-- Header Section -->
     <header>
-        <h1>Online Maid Booking System</h1>
+        <nav>
+            <div class="logo">
+                <img src="https://ajaxuploader.com/uploadfiles/f2c9ea11-fa08-34de-22c6-1e918e5c9f3b.jpg" alt="MaidEase Logo">
+            </div>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Jobs</a></li>
+            </ul>
+            <div class="login-signup">
+                <a href="#" class="login-btn">Login</a>
+                <a href="#" class="signup-btn">Sign Up</a>
+            </div>
+        </nav>
     </header>
 
-    <section id="service-selection">
-        <h2>Select a Service</h2>
-        <div class="service-card">
-            <h3>House Cleaning</h3>
-            <p>Professional house cleaning services.</p>
-            <button class="select-service">Select Service</button>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Hire Experts & Get Your Job Done</h1>
+            <p>Find trusted maids to help you with household tasks efficiently and reliably.</p>
+            <a href="#" class="cta-button">Search Now</a>
         </div>
-        <!-- Add more service cards here -->
-    </section>
-
-    <section id="bargaining">
-        <h2>Make an Offer</h2>
-        <label for="price-offer">Your Offer:</label>
-        <input type="number" id="price-offer" placeholder="Enter your price offer">
-        <button id="submit-offer">Submit Offer</button>
-        <p id="offer-status"></p>
-    </section>
-
-    <section id="reviews">
-        <h2>Reviews</h2>
-        <div id="reviews-container">
-            <!-- Reviews will be loaded here dynamically -->
-        </div>
-        <div id="leave-review">
-            <h3>Leave a Review</h3>
-            <textarea id="review-text" placeholder="Write your review here"></textarea>
-            <button id="submit-review">Submit Review</button>
+        <div class="hero-image">
+            <img src="https://ajaxuploader.com/uploadfiles/36925d4c-54f3-631f-0c0d-9f7dbae2b757.jpeg" alt="Maid Services">
         </div>
     </section>
-
-    <script src="scripts.js"></script>
 </body>
 </html>
