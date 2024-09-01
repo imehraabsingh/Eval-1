@@ -1,97 +1,233 @@
-/* General Styles */
-body {
-    font-family: 'Arial', sans-serif;
+/* General Styling */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #f4f1de;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
     color: #3d405b;
+    background-color: #f4f1de;
 }
 
-ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
 }
 
-/* Header Styles */
+/* Header Styling */
 header {
     background-color: #3d405b;
-    padding: 20px 40px;
+    padding: 15px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-nav {
+header .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.logo img {
-    max-width: 150px;
+header .logo img {
+    height: 50px;
 }
 
-.nav-links {
+header nav ul {
     display: flex;
-    gap: 30px;
+    list-style: none;
+    align-items: center;
 }
 
-.nav-links li a {
+header nav ul li {
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    text-decoration: none;
     color: #f4f1de;
-    text-decoration: none;
     font-size: 16px;
+    font-weight: bold;
 }
 
-.login-signup {
-    display: flex;
-    gap: 15px;
-}
-
-.login-btn, .signup-btn {
+header nav ul li a.button {
     background-color: #e07a5f;
-    color: white;
+    color: #f4f1de;
     padding: 10px 20px;
-    text-decoration: none;
     border-radius: 5px;
 }
 
-.signup-btn {
-    background-color: #81b29a;
+header nav ul li a.button:hover {
+    background-color: #f2cc8f;
 }
 
-/* Hero Section */
+/* Hero Section Styling */
 .hero {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 60px 40px;
+    padding: 50px 0;
     background-color: #f4f1de;
 }
 
-.hero-content {
-    max-width: 50%;
+.hero .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
-.hero-content h1 {
-    font-size: 3em;
-    margin-bottom: 20px;
+.hero-text {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.hero-text h1 {
+    font-size: 3rem;
     color: #3d405b;
 }
 
-.hero-content p {
-    font-size: 1.2em;
-    margin-bottom: 30px;
+.hero-text p {
+    font-size: 1.2rem;
+    margin: 20px 0;
     color: #3d405b;
 }
 
 .cta-button {
-    background-color: #e07a5f;
-    color: white;
-    padding: 15px 30px;
+    background-color: #81b29a;
+    color: #ffffff;
+    padding: 15px 25px;
     text-decoration: none;
     border-radius: 5px;
+    font-size: 1rem;
+}
+
+.cta-button:hover {
+    background-color: #e07a5f;
+}
+
+.hero-image {
+    flex: 1;
+    text-align: right;
 }
 
 .hero-image img {
     max-width: 100%;
-    border-radius: 15px;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .hero-text {
+        padding: 0;
+    }
+
+    .hero-image {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    header nav ul {
+        flex-direction: column;
+    }
+
+    header nav ul li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}
+body {
+    font-family: 'Arial', sans-serif;
+    color: #3d405b;
+    background-color: #f4f1de;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+h2 {
+    color: #e07a5f;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Image Section */
+.image-section {
+    background-color: #f2cc8f;
+    padding: 50px 0;
+}
+
+.service-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.service-item {
+    text-align: center;
+    width: 23%;
+    margin-bottom: 30px;
+}
+
+.service-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.service-item h3 {
+    color: #3d405b;
+    margin-top: 15px;
+}
+
+/* Client Section */
+.client-section {
+    background-color: #81b29a;
+    padding: 50px 0;
+}
+
+.client-logos {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.client-logo {
+    width: 20%;
+    text-align: center;
+}
+
+.client-logo img {
+    width: 100%;
+    height: auto;
+    filter: grayscale(100%);
+    transition: filter 0.3s ease;
+}
+
+.client-logo img:hover {
+    filter: grayscale(0%);
+}
+
+@media (max-width: 768px) {
+    .service-item, .client-logo {
+        width: 45%;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .service-item, .client-logo {
+        width: 100%;
+    }
 }
