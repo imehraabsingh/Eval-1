@@ -7,7 +7,8 @@
 
 body {
     font-family: 'Arial', sans-serif;
-    color: #333;
+    color: #3d405b;
+    background-color: #f4f1de;
 }
 
 .container {
@@ -18,7 +19,7 @@ body {
 
 /* Header Styling */
 header {
-    background-color: #ffffff;
+    background-color: #3d405b;
     padding: 15px 0;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
@@ -45,20 +46,20 @@ header nav ul li {
 
 header nav ul li a {
     text-decoration: none;
-    color: #333;
+    color: #f4f1de;
     font-size: 16px;
     font-weight: bold;
 }
 
 header nav ul li a.button {
-    background-color: #FFB830;
-    color: #ffffff;
+    background-color: #e07a5f;
+    color: #f4f1de;
     padding: 10px 20px;
     border-radius: 5px;
 }
 
 header nav ul li a.button:hover {
-    background-color: #FFA500;
+    background-color: #f2cc8f;
 }
 
 /* Hero Section Styling */
@@ -66,7 +67,7 @@ header nav ul li a.button:hover {
     display: flex;
     align-items: center;
     padding: 50px 0;
-    background-color: #f4f4f4;
+    background-color: #f4f1de;
 }
 
 .hero .container {
@@ -83,17 +84,17 @@ header nav ul li a.button:hover {
 
 .hero-text h1 {
     font-size: 3rem;
-    color: #2C3E50;
+    color: #3d405b;
 }
 
 .hero-text p {
     font-size: 1.2rem;
     margin: 20px 0;
-    color: #666;
+    color: #3d405b;
 }
 
 .cta-button {
-    background-color: #FFB830;
+    background-color: #81b29a;
     color: #ffffff;
     padding: 15px 25px;
     text-decoration: none;
@@ -102,7 +103,7 @@ header nav ul li a.button:hover {
 }
 
 .cta-button:hover {
-    background-color: #FFA500;
+    background-color: #e07a5f;
 }
 
 .hero-image {
