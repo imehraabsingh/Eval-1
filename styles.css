@@ -1,70 +1,97 @@
+/* General Styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f0f0f0;
+    box-sizing: border-box;
+    background-color: #f4f1de;
+    color: #3d405b;
 }
 
-header {
-    background-color: #4CAF50;
-    color: white;
-    padding: 20px;
-    text-align: center;
-}
-
-section {
-    margin: 20px;
-    padding: 20px;
-    background-color: white;
-    border-radius: 8px;
-}
-
-h2 {
-    margin-top: 0;
-}
-
-.service-card {
-    border: 1px solid #ddd;
-    padding: 10px;
-    margin: 10px 0;
-    border-radius: 8px;
-}
-
-.service-card h3 {
+ul {
+    list-style: none;
     margin: 0;
+    padding: 0;
 }
 
-button {
-    background-color: #4CAF50;
+/* Header Styles */
+header {
+    background-color: #3d405b;
+    padding: 20px 40px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    max-width: 150px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links li a {
+    color: #f4f1de;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.login-signup {
+    display: flex;
+    gap: 15px;
+}
+
+.login-btn, .signup-btn {
+    background-color: #e07a5f;
     color: white;
-    border: none;
     padding: 10px 20px;
-    border-radius: 8px;
-    cursor: pointer;
+    text-decoration: none;
+    border-radius: 5px;
 }
 
-button:hover {
-    background-color: #45a049;
+.signup-btn {
+    background-color: #81b29a;
 }
 
-#reviews-container {
-    max-height: 200px;
-    overflow-y: auto;
+/* Hero Section */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 40px;
+    background-color: #f4f1de;
+}
+
+.hero-content {
+    max-width: 50%;
+}
+
+.hero-content h1 {
+    font-size: 3em;
     margin-bottom: 20px;
+    color: #3d405b;
 }
 
-#reviews-container .review {
-    border-bottom: 1px solid #ddd;
-    padding: 10px 0;
+.hero-content p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    color: #3d405b;
 }
 
-#review-text {
-    width: 100%;
-    height: 100px;
-    margin-bottom: 10px;
+.cta-button {
+    background-color: #e07a5f;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
 }
 
-#offer-status {
-    margin-top: 10px;
-    color: green;
+.hero-image img {
+    max-width: 100%;
+    border-radius: 15px;
 }
