@@ -95,22 +95,3 @@ nav {
     max-width: 100%;
     border-radius: 15px;
 }
-body {
-    font-family: 'Arial', sans-serif;
-    color: #3d405b;
-    background-color: #f4f1de;
-    margin: 0;
-    padding: 0;
-}
-
-.container {
-    width: 80%;
-    margin: 0 auto;
-}
-
-h2 {
-    color: #e07a5f;
-    text-align: center;
-    margin-bottom: 30px;
-}
-
