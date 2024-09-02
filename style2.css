@@ -1,0 +1,219 @@
+/* style.css */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header {
+    background-color: #fff;
+    padding: 20px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+.logo {
+    float: left;
+    margin-right: 20px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    float: left;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.buttons {
+    float: right;
+}
+
+.login-btn, .signup-btn {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+.hero {
+    background-image: url("https://placehold.co/1000x400/000000/ffffff?text=Maid+Cleaning+Background");
+    background-size: cover;
+    background-position: center;
+    padding: 100px 0;
+    color: #fff;
+}
+
+.hero-content {
+    text-align: center;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #fff;
+    color: #333;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+.services {
+    padding: 50px 0;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.service {
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.service img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+.how-it-works {
+    padding: 50px 0;
+    background-color: #f9f9f9;
+}
+
+.how-it-works-steps {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.step {
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.step img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.providers {
+    padding: 50px 0;
+}
+
+.providers-image {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.providers-image img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.featured-providers {
+    padding: 50px 0;
+    background-color: #f9f9f9;
+}
+
+.featured-providers-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.provider {
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.provider img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    nav ul {
+        float: none;
+        text-align: center;
+    }
+
+    nav li {
+        display: block;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .buttons {
+        float: none;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .hero-content {
+        padding: 20px;
+    }
+
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .how-it-works-steps {
+        grid-template-columns: 1fr;
+    }
+
+    .featured-providers-grid {
+        grid-template-columns: 1fr;
+    }
+}
