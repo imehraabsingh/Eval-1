@@ -18,6 +18,7 @@ ul {
 header {
     background-color: #3d405b;
     padding: 20px 40px;
+    position: fixed;
 }
 
 nav {
