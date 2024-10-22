@@ -5,17 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MaidEase - Online Maid Hiring</title>
     <link rel="stylesheet" href="styles.css">
-    <!-- Font Awesome for icons -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 </head>
 <body>
-    <!-- Header Section -->
     <header>
         <nav>
             <div class="logo">
                 <img src="https://ajaxuploader.com/uploadfiles/f2c9ea11-fa08-34de-22c6-1e918e5c9f3b.jpg" alt="MaidEase Logo">
             </div>
-            <ul class="nav-links">
+            <div class="menu-toggle" id="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-links" id="nav-links">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Services</a></li>
                 <li><a href="#">About Us</a></li>
@@ -28,8 +29,6 @@
             </div>
         </nav>
     </header>
-
-    <!-- Hero Section -->
     <section class="hero">
         <div class="hero-content">
             <h1>Hire Experts & Get Your Job Done</h1>
@@ -40,5 +39,14 @@
             <img src="https://ajaxuploader.com/uploadfiles/36925d4c-54f3-631f-0c0d-9f7dbae2b757.jpeg" alt="Maid Services">
         </div>
     </section>
+
+    <script>
+        const mobileMenu = document.getElementById('mobile-menu');
+        const navLinks = document.getElementById('nav-links');
+
+        mobileMenu.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
 </body>
 </html>

@@ -1,4 +1,3 @@
-/* General Styles */
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
@@ -14,7 +13,6 @@ ul {
     padding: 0;
 }
 
-/* Header Styles */
 header {
     background-color: #3d405b;
     padding: 20px 40px;
@@ -24,6 +22,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
 }
 
 .logo img {
@@ -58,7 +57,13 @@ nav {
     background-color: #81b29a;
 }
 
-/* Hero Section */
+.menu-toggle {
+    display: none;
+    font-size: 24px;
+    color: #f4f1de;
+    cursor: pointer;
+}
+
 .hero {
     display: flex;
     justify-content: space-between;
@@ -94,4 +99,89 @@ nav {
 .hero-image img {
     max-width: 100%;
     border-radius: 15px;
+}
+
+@media screen and (max-width: 1024px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-content {
+        max-width: 80%;
+    }
+
+    .hero-content h1 {
+        font-size: 2.5em;
+    }
+
+    .hero-image {
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        display: none;
+    }
+
+    .nav-links.active {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: #3d405b;
+        width: 100%;
+        padding: 20px;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .hero-content h1 {
+        font-size: 2em;
+    }
+
+    .hero-content p {
+        font-size: 1em;
+    }
+
+    .hero {
+        padding: 40px 20px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    header {
+        padding: 10px 20px;
+    }
+
+    .logo img {
+        max-width: 120px;
+    }
+
+    .hero-content h1 {
+        font-size: 1.8em;
+    }
+
+    .hero-content p {
+        font-size: 0.9em;
+    }
+
+    .cta-button {
+        padding: 10px 20px;
+    }
+
+    .hero-image img {
+        max-width: 100%;
+    }
 }
