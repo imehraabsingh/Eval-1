@@ -201,7 +201,6 @@ footer {
     text-align: center;
 }
 
-/* Responsive Styles */
 @media (max-width: 768px) {
     nav ul {
         float: none;
@@ -218,6 +217,63 @@ footer {
         float: none;
         text-align: center;
         margin-top: 10px;
+    }
+
+    .hero-content {
+        padding: 20px;
+    }
+
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .how-it-works-steps {
+        grid-template-columns: 1fr;
+    }
+
+    .featured-providers-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        display: none; 
+        float: none;
+        text-align: center;
+        padding: 0; 
+    }
+
+    nav.active ul {
+        display: block; 
+    }
+
+    nav li {
+        display: block; 
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .buttons {
+        float: none;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .nav-toggle {
+        display: block;
+        cursor: pointer;
+        float: right;
+        margin-top: 10px;
+    }
+
+    .nav-toggle .bar {
+        display: block;
+        width: 25px;
+        height: 3px;
+        margin: 5px auto;
+        background-color: var(--background-color);
+        transition: all 0.3s;
     }
 
     .hero-content {
