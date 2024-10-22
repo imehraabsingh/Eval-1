@@ -12,7 +12,12 @@
             <a href="#" class="logo">
                 <img src="https://ajaxuploader.com/uploadfiles/f2c9ea11-fa08-34de-22c6-1e918e5c9f3b.jpg" alt="MaidEase Logo">
             </a>
-            <nav>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <nav id="nav">
                 <ul>
                     <li><a href="#">Home</a></li>
                     <li><a href="#">Provider Page</a></li>
@@ -24,10 +29,7 @@
                     <li><a href="#">Jobs</a></li>
                 </ul>
             </nav>
-            <div class="buttons">
-                <a href="#" class="login-btn">Login</a>
-                <a href="#" class="signup-btn">+ Sign Up</a>
-            </div>
+            
         </div>
     </header>
 
@@ -138,6 +140,15 @@
             <p>&copy; 2024 MaidEase. All rights reserved.</p>
         </div>
     </footer>
+
+    <script>
+        const navToggle = document.getElementById('nav-toggle');
+        const nav = document.getElementById('nav');
+    
+        navToggle.addEventListener('click', () => {
+            nav.classList.toggle('active');
+        });
+    </script>
 
 </body>
 </html>
